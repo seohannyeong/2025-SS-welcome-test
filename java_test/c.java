@@ -1,10 +1,22 @@
 package java_test;
 
+import java.util.Scanner;
+
 public class c {
     public static void main(String[] args) {
 
-        // 이 부분에 code를 작성해주세요!
-
+        Scanner scanner = new Scanner(System.in);
+		
+		//System.out.print("나이, 키 순서대로 입력 : ");
+		int age = scanner.nextInt();
+		int height = scanner.nextInt();
+		
+		if (age >= 14 || height >= 155) {
+			System.out.println("X");
+		}
+		else {
+			System.out.println("O");
+		}
     }
 
 }
